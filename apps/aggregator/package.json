@@ -1,0 +1,17 @@
+{
+  "name": "aggregator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "David Gonzalez and Alex Knol",
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/hapi": "^18.1.0",
+    "moment": "^2.24.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  }
+}
