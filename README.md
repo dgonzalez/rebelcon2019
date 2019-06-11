@@ -23,7 +23,15 @@ The rest, follow David.
 - Create a cluster on GCP: https://cloud.google.com/kubernetes-engine/docs/how-to/creating-a-cluster
 - Create a single master cluster with Kubeadm: https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/
 
-## Exercise 2: Deploy an app
+## Exercise 2: Get familiar with Kubectl
+
+Here we are going to get familiar with Kube Control (kubectl): The tool used to operate Kubernetes.
+
+### More info
+- Install kubectl https://kubernetes.io/docs/tasks/tools/install-kubectl/
+- kubectl documentation https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands
+
+## Exercise 3: Deploy an app
 
 The system that we are going to deploy into Kubernetes is composed of three micro-services:
 - ISODateService: Converts a timestamp into a ISO formatted date
@@ -37,14 +45,6 @@ All the source code you need is included in the folder `apps` but feel free to p
 ### More Info:
 - What is a deployment? https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
 - What is a service? How do I use it? https://kubernetes.io/docs/tutorials/kubernetes-basics/expose/expose-intro/
-
-## Exercise 3: Get familiar with Kubectl
-
-Here we are going to get familiar with Kube Control (kubectl): The tool used to operate Kubernetes.
-
-### More info
-- Install kubectl https://kubernetes.io/docs/tasks/tools/install-kubectl/
-- kubectl documentation https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands
 
 ## Exercise 4: Deploy a new version of your app (scale up, scale down and deploy a new version)
 
