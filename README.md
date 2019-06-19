@@ -9,7 +9,7 @@ By the end of this workshop, you should be able to deploy basic apps on a Kubern
 Remember, this is a guided workshop: We will show you what to do step by step but, if you want to experiment, feel free to
 do it so! We want you to get the best you can get out of it.
 
-Install: https://cloud.google.com/appengine/docs/standard/go/download
+Install: https://cloud.google.com/sdk/docs/#install_the_latest_cloud_tools_version_cloudsdk_current_version
 
 ## Exercise 1: Setup a cluster on GKE
 
