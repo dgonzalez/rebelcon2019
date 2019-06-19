@@ -20,6 +20,7 @@ We will create one on GCP for every team. David or Alex will invite you to a GCP
 ### More info:
 - Create a cluster on GCP: https://cloud.google.com/kubernetes-engine/docs/how-to/creating-a-cluster
 - Create a single master cluster with Kubeadm: https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/
+- https://console.cloud.google.com/iam-admin/iam?project=rebelcon2019
 
 ## Exercise 2: Get familiar with Kubectl
 
