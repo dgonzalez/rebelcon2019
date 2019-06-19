@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: aggregator-deployment
+  name: utc-date-deployment
   labels:
-    app: aggregator
+    app: utc-date-service
 spec:
-  replicas: 1
+  replicas: {{ .Values.replicas }}
   selector:
     matchLabels:
-      app: aggregator
+      app: utc-date-service
   template:
     metadata:
       labels:
-        app: aggregator
+        app: utc-date-service
     spec:
       containers:
-      - name: aggregator
+      - name: utc-date-service
         image: "{{ .Values.utc.image.repository }}:{{ .Values.utc.image.tag }}"
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         ports:

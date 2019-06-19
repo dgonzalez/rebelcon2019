@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: aggregator-deployment
+  name: iso-date-deployment
   labels:
-    app: aggregator
+    app: iso-date-service
 spec:
-  replicas: 1
+  replicas: {{ .Values.replicas }}
   selector:
     matchLabels:
-      app: aggregator
+      app: iso-date-service
   template:
     metadata:
       labels:
-        app: aggregator
+        app: iso-date-service
     spec:
       containers:
-      - name: aggregator
+      - name: iso-date-service
         image: "{{ .Values.iso.image.repository }}:{{ .Values.iso.image.tag }}"
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         ports:
