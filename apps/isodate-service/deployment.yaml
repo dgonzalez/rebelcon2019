@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: iso-date-service-deployment
+  labels:
+    app: iso-date-service
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: iso-date-service
+  template:
+    metadata:
+      labels:
+        app: iso-date-service
+    spec:
+      containers:
+      - name: iso-dateservice
+        image: dagonza/iso-date-service:latest
+        ports:
+        - containerPort: 3000
