@@ -11,8 +11,8 @@ const init = async () => {
     path: '/dates/{timestamp}',
     handler: async (req, h) => {
       try {
-        let utcBody = await request(`http://localhost:3001/${req.params.timestamp}/utcdate`)
-        let isoBody = await request(`http://localhost:3000/${req.params.timestamp}/isodate`)
+        let utcBody = await request(`http://utc-date-service/${req.params.timestamp}/utcdate`)
+        let isoBody = await request(`http://iso-date-service/${req.params.timestamp}/isodate`)
         return {
           utcDate: JSON.parse(utcBody).date,
           isoDate: JSON.parse(isoBody).date
