@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: iso-dateservice
-        image: dagonza/iso-date-service:latest
+        image: dagonzadub/iso-date-service:latest
         ports:
         - containerPort: 3000

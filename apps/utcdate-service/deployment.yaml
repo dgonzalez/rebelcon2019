@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: utc-dateservice
-        image: dagonza/utc-date-service:latest
+        image: dagonzadub/utc-date-service:latest
         ports:
         - containerPort: 3001
