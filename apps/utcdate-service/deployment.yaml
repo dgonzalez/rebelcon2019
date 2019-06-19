@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: utc-date-service-deployment
+  labels:
+    app: utc-date-service
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: utc-date-service
+  template:
+    metadata:
+      labels:
+        app: utc-date-service
+    spec:
+      containers:
+      - name: utc-dateservice
+        image: dagonzadub/utc-date-service:latest
+        ports:
+        - containerPort: 3001

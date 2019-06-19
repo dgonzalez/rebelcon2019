@@ -9,19 +9,18 @@ By the end of this workshop, you should be able to deploy basic apps on a Kubern
 Remember, this is a guided workshop: We will show you what to do step by step but, if you want to experiment, feel free to
 do it so! We want you to get the best you can get out of it.
 
-## Exercise 1: Setup a cluster on GKE or in your laptops
+Install: https://cloud.google.com/sdk/docs/#install_the_latest_cloud_tools_version_cloudsdk_current_version
 
-Before deploying any application, we need to create a cluster. At this stage we have two options:
+## Exercise 1: Setup a cluster on GKE
 
-- Setup a cluster in the room.
-- Setup a cluster in Google Cloud Platform (using the free trial).
+Before anything else, we need to have a cluster.
 
-Those who want to setup the cluster in the room, follow Alex.
-The rest, follow David.
+We will create one on GCP for every team. David or Alex will invite you to a GCP project where you can create the cluster. Just be mindful on resources!
 
 ### More info:
 - Create a cluster on GCP: https://cloud.google.com/kubernetes-engine/docs/how-to/creating-a-cluster
 - Create a single master cluster with Kubeadm: https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/
+- https://console.cloud.google.com/iam-admin/iam?project=rebelcon2019
 
 ## Exercise 2: Get familiar with Kubectl
 
@@ -64,3 +63,7 @@ packed as a docker container and uploaded to Docker Hub but you can find the cod
 First, we are going to let the app run wild. Then, we are going to patch it to keep it within reasonable boundaries.
 This is a very familiar situation to every developer: a memmory leak that jeopardizes your system. Here we are going to see
 how Kubernetes can turn a dreadful situation into a `not-so-bad` incident.
+
+## Bonus
+
+If you made it here, well done! After the above work Alex and David will provide free consulting for the rest of the session on the problems you are facing at work around DevOps or Digital Transformation.
